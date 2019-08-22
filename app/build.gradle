@@ -18,6 +18,7 @@
 */
 
 apply plugin: 'com.android.application'
+//apply plugin: 'groovy'
 
 buildscript {
     repositories {
@@ -146,7 +147,7 @@ cdvBuildRelease.dependsOn {
     return computeBuildTargetName(false)
 }
 
-task cdvPrintProps << {
+/*task cdvPrintProps << {
     println('cdvCompileSdkVersion=' + cdvCompileSdkVersion)
     println('cdvBuildToolsVersion=' + cdvBuildToolsVersion)
     println('cdvVersionCode=' + cdvVersionCode)
@@ -160,7 +161,7 @@ task cdvPrintProps << {
     android.productFlavors.each { flavor ->
         println('computed' + flavor.name.capitalize() + 'VersionCode=' + flavor.versionCode)
     }
-}
+}*/
 
 android {
 
